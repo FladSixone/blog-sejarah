@@ -4,6 +4,7 @@
 
 <div align="center">
 <img src="https://github.com/ArkaRaindra/Gif/blob/main/konatahype.gif">
+  <p>😂 😂 😂 😂 😂 </p>
 </div>
 
 <h4>Please garapkan le</h4>
