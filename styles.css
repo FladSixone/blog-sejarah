@@ -109,16 +109,17 @@ section {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 80%;
     margin: 0 auto;
-    padding: 20px;
-      margin-top: 40px;
+    margin-top: 40px;
 }
 
 .container h2 {
     font-family: trajan;
     margin-bottom: 20px;
 }
+
+
 
 .container p {
     font-size: 18px;
@@ -217,14 +218,30 @@ section {
 }
 
 .sidebar {
-    margin-left: 20px;
+    width: auto;
+    height: auto;
     background-color: #d2c8a5b7;
-    padding: 45px;
     border: black 1px solid;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 20px;
+    margin: 20px;
     text-align: center;
+    display: flex;
+    float: left;
+}
+
+.sidebar ul li {
+    list-style: none;
+
+}
+.sidebar li a {
+    margin-bottom: 20px;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #3D2424;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .separator {

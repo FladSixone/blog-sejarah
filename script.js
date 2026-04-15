@@ -1,5 +1,5 @@
 const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.navbar a');
+const navLinks = document.querySelectorAll('.sidebar');
 
 window.addEventListener('scroll', () => {
     let current = '';
