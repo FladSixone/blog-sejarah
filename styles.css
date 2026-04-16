@@ -283,6 +283,7 @@ section {
 .separator img {
     width: 100px;
     height: auto;
+    margin-left: 30px;
 }
 
 .footer {
