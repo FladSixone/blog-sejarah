@@ -18,6 +18,10 @@ section {
     scroll-margin-top: 150px;
 }
 
+hr {
+    border: black 1px solid;
+}
+
 .navbar {
     position: sticky;
     overflow: hidden;
@@ -138,7 +142,6 @@ section {
     margin: 10px 0 0;
 }
 
-/* ===================== LAYOUT ===================== */
 .container {
     max-width: 90%;
     margin: 40px auto;
@@ -241,12 +244,28 @@ section {
     width: 300px;
     height: auto;
     margin-bottom: 10px;
+} 
+
+.text ul li a {
+    color: #3D2424;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.text ul li{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.text ul li a:hover {
+    color: rgb(130, 18, 18);
 }
 
 #konten5 p {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease;
+    transition: max-height 0.4s ease-in-out;
 }
 
 #konten5 p.active {
