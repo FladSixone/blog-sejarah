@@ -112,17 +112,17 @@ hr {
 
 /* Banner per halaman — ganti gambar sesuai kebutuhan */
 .banner-page2 {
-    background-image: url(assets/rin.jpg);
+    background-image: url(assets/assemblyline.jpg);
     background-color: #3a4a6b;
 }
 
 .banner-page3 {
-    background-image: url(assets/rin.jpg);
+    background-image: url(assets/computer_room.jpg);
     background-color: #2d5a3d;
 }
 
 .banner-page4 {
-    background-image: url(assets/rin.jpg);
+    background-image: url(assets/bigdata.png);
     background-color: #1a1a2e;
 }
 
@@ -245,6 +245,10 @@ hr {
     height: auto;
     margin-bottom: 10px;
 } 
+
+.content section .info .link {
+width: 300px;
+}
 
 .content section h3 {
     cursor: pointer;
