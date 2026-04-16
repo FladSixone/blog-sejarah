@@ -8,6 +8,13 @@
 </div>
 
 <h4>Please garapkan le</h4>
+<ul>
+  <li>I'm</li>
+  <li>Going</li>
+  <li>Crazy</li>
+  <li>Outta</li>
+  <li>Here</li>
+</ul>
 <p> Nggarap sejarah</p>
 <br>
 <p>Iya</p>
