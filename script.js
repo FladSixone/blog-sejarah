@@ -3,6 +3,7 @@ const pages = document.querySelectorAll('.page');
 const gambar = document.getElementById('gambar');
 const separator = document.querySelectorAll('.separator img');
 const audios = document.querySelectorAll("audio");
+const triviaa = document.querySelectorAll('#konten5 h3');
 
 function stopsounds() {
     audios.forEach(audio => {
@@ -33,6 +34,21 @@ separator.forEach(img => {
             }
         });
     }
+});
+
+triviaa.forEach(header => {
+    header.addEventListener('click', () => {
+        const paragraph = header.nextElementSibling;
+        const sign = header.querySelector('.sign');
+
+        paragraph.classList.toggle('active');
+
+        if (paragraph.classList.contains('active')) {
+            sign.textContent = '-';
+        } else {
+            sign.textContent = '+';
+        }
+    });
 });
 
 function switchPage(targetPageId) {
