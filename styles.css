@@ -246,6 +246,33 @@ hr {
     margin-bottom: 10px;
 } 
 
+.content section h3 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content section h3 .sign {
+    font-size: 20px;
+    font-weight: bold;
+    width: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: black 1px solid;
+    border-radius: 50%;
+}
+
+.content section h3 + p {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.content section h3 + p.active {
+    max-height: 500px; 
+}
+
 .text ul li a {
     color: #3D2424;
     text-decoration: none;
@@ -260,32 +287,6 @@ hr {
 
 .text ul li a:hover {
     color: rgb(130, 18, 18);
-}
-
-#konten5 p {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-in-out;
-}
-
-#konten5 p.active {
-    max-height: 500px;
-}
-
-#konten5 h3 {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-#konten5 .sign {
-    font-weight: bold;
-    font-size: 20px;
-    width: 20px;
-    text-align: center;
-    border: black 1px solid;
-    border-radius: 45px
 }
 
 .info {

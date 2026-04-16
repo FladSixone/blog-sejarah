@@ -3,7 +3,7 @@ const pages = document.querySelectorAll('.page');
 const gambar = document.getElementById('gambar');
 const separator = document.querySelectorAll('.separator img');
 const audios = document.querySelectorAll("audio");
-const triviaa = document.querySelectorAll('#konten5 h3');
+const triviaa = document.querySelectorAll('.content section h3');
 
 function stopsounds() {
     audios.forEach(audio => {
@@ -40,6 +40,8 @@ triviaa.forEach(header => {
     header.addEventListener('click', () => {
         const paragraph = header.nextElementSibling;
         const sign = header.querySelector('.sign');
+
+        if (!paragraph) return;
 
         paragraph.classList.toggle('active');
 
@@ -90,14 +92,13 @@ function updateSidebarListener(activePageId) {
     const sections = activePage.querySelectorAll('section');
     const sidebarLinks = activePage.querySelectorAll('.sidebar a');
 
-    window.onscroll = () => {
-        let current = '';
+    window.addEventListener ("scroll", () => {
+        let current = "";
 
         sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
+            const rect = section.getBoundingClientRect();
 
-            if (pageYOffset >= sectionTop - sectionHeight / 3) {
+            if (rect.top <= window.innerHeight / 3 && rect.bottom >= window.innerHeight / 3) {
                 current = section.getAttribute('id');
             }
         });
@@ -108,7 +109,7 @@ function updateSidebarListener(activePageId) {
                 link.classList.add('active');
             }
         });
-    };
+    });
 }
 
 updateSidebarListener('page1');
