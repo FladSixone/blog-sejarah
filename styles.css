@@ -344,7 +344,7 @@ width: 300px;
     margin-top: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {   
     .navbar ul {
         display: flex;
         gap: 10px;
@@ -388,18 +388,34 @@ width: 300px;
     }
 
     .container {
+        flex-direction: row;
+        gap: 10px;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .sidebar {
         padding: 10px;
-        margin-top: 20px;
+        font-size: 14px;
+        width: 120%;
+        position: sticky;
+        top: 80px;
+    }
+
+    .sidebar ul li a {
+        font-size: 14px;
+        padding: 6px;
     }
 
     .content {
-        margin-left: 0;
+        margin-left: 10px;
         gap: 10px;
+        flex: 1;
+        padding: 0 5px;
     }
 
     .content section {
         flex-direction: column;
-        gap: 10px;
     }
 
     .content section .text {
