@@ -10,7 +10,8 @@
 <h4>Please garapkan le</h4>
 <ul>
   <li>I'm</li>
-  <li>Going</li>
+  <li>Gonna</li>
+  <li>Be</li>
   <li>Crazy</li>
   <li>Outta</li>
   <li>Here</li>
