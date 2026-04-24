@@ -3,6 +3,22 @@
   src: url(font/TrajanPro-Regular.ttf);
 }
 
+@font-face {
+  font-family: bebas;
+  src: url(font/BebasNeue-Regular.ttf);
+}
+
+@keyframes revealUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -32,7 +48,6 @@ body {
 .container {
   max-width: 90%;
   margin: 40px auto;
-  display: flex;
   gap: 20px;
 }
 
@@ -76,8 +91,62 @@ body {
   box-shadow: black 0px 4px 6px -1px, black 0px 2px 4px -1px;
 }
 
+.card h2 {
+  font-family: bebas;
+  font-size: 32px;
+  letter-spacing: 1.5px;
+}
+
 .card img {
-  width: 50%;
+  width: 100%;
   height: auto;
   margin-bottom: 20px;
+  display: block;
+
+  transform: translateY(100%);
+  opacity: 0;
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+
+  animation: revealUp 0.8s ease-out forwards;
 }
+
+.img-wrapper {
+  width: 50%;
+  overflow: hidden;
+}
+
+.content li:nth-child(1) img{
+  animation-delay: 1.2s;
+}
+
+.content li:nth-child(2) img{
+  animation-delay: 1.4s;
+}
+
+.content li:nth-child(3) img{
+  animation-delay: 1.6s;
+}
+
+.content li:nth-child(4) img {
+  animation-delay: 1.8s;
+}
+
+.button {
+  color: white;
+  padding: 10px 40px;
+  margin-top: 40px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.button button {
+  border: 2px solid black;
+  padding: 20px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
