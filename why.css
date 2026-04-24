@@ -102,6 +102,8 @@ body {
   height: auto;
   margin-bottom: 20px;
   display: block;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
 
   transform: translateY(100%);
   opacity: 0;
