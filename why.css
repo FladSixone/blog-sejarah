@@ -50,3 +50,31 @@ body {
   text-align: center;
   font-family: trajan;
 }
+
+.content ul {
+  list-style-type: none;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card {
+  background-color: #aa9d9d;
+  padding: 20px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: black 0px 4px 6px -1px, black 0px 2px 4px -1px;
+}
+
+.card img {
+  width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+}
