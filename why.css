@@ -68,15 +68,18 @@ body {
 
 .content ul {
   list-style-type: none;
-  padding-left: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
 }
 
 .content li {
   margin-bottom: 10px;
   font-size: 18px;
+  list-style: none;
 }
 
 .card {
@@ -152,3 +155,30 @@ body {
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .content ul {
+    justify-content: space-between;
+  }
+
+  .content li {
+    width: 48%; /* 2 kolom */
+  }
+
+  .card {
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  .card h2 {
+    font-size: 22px;
+  }
+
+  .img-wrapper {
+    width: 80%;
+  }
+
+  .button button {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+}
