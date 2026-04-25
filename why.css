@@ -116,6 +116,12 @@ body {
   animation: revealUp 0.8s ease-out forwards;
 }
 
+.card p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: -15px;
+}
+
 .img-wrapper {
   width: 50%;
   overflow: hidden;
