@@ -4,17 +4,18 @@
 
 <div align="center">
 <img src="https://github.com/ArkaRaindra/Gif/blob/main/konatahype.gif">
-  <p>😂 😂 😂 😂 😂 </p>
 </div>
 
-<h4>Please garapkan le</h4>
+<h4>Tugas SIJA berkedok tugas sejarah</h4>
 <ul>
-  <li>I'm</li>
-  <li>Going</li>
+  <li>Implemented mobile layout</li>
+  <li>Cantik</li>
+  <li>Aesthetic</li>
   <li>Crazy</li>
-  <li>Outta</li>
-  <li>Here</li>
+  <li>Keren</li>
+  <li>Suka</li>
 </ul>
-<p> Nggarap sejarah</p>
+<p>Sejarah</p>
 <br>
+<p>Add something that not required</p>
 <p>Iya</p>

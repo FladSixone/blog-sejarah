@@ -2,6 +2,8 @@ const navPageLinks = document.querySelectorAll('.nav-page');
 const pages = document.querySelectorAll('.page');
 const gambar = document.getElementById('gambar');
 const separator = document.querySelectorAll('.separator img');
+
+// audio
 const audios = document.querySelectorAll("audio");
 const triviaa = document.querySelectorAll('.content section h3');
 
@@ -35,6 +37,7 @@ separator.forEach(img => {
         });
     }
 });
+// end of audio
 
 triviaa.forEach(header => {
     header.addEventListener('click', () => {
