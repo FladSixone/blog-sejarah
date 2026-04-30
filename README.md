@@ -1,7 +1,4 @@
 # BLOG SEJARAH
-
-<h1>Bloh Sejarah</h1>
-
 <h3>Changelog</h3>
 <ul>
   <li>Merged branch main</li>
