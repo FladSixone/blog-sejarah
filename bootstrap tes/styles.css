@@ -1,0 +1,305 @@
+@font-face {
+    font-family: trajan;
+    src: url(font/TrajanPro-Regular.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+section {
+    scroll-margin-top: 150px;
+}
+
+hr {
+    border: black 1px solid;
+}
+
+.navbar {
+    background-color: #3D2424;
+    padding: 2px 0;
+    box-shadow: black 0px 4px 6px -1px, black 0px 2px 4px -1px;
+    z-index: 1000;
+}
+
+.navbar .nav-link {
+    color: rgb(251, 251, 251);
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: color 0.3s, font-weight 0.3s;
+    position: relative;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.navbar .nav-link:hover {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.5s;
+}
+
+.navbar .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar .nav-link.active {
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
+    background-color: transparent !important;
+}
+
+.navbar .nav-link.active::after {
+    width: 100%;
+}
+
+.page {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.page.active-page {
+    display: block;
+    opacity: 1;
+}
+
+.banner {
+    background-image: url(assets/industrialrevolution.jpg);
+    background-color: #836355;
+    background-size: cover;
+    background-position: center bottom;
+    height: 400px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner-page2 { background-image: url(assets/assemblyline.jpg);  background-color: #3a4a6b; background-position: top;}
+.banner-page3 { background-image: url(assets/computer_room.jpg); background-color: #2d5a3d; background-position: top;}
+.banner-page4 { background-image: url(assets/bigdata.png);        background-color: #1a1a2e; background-position: center; }
+
+.banner h1, .banner h2 {
+    font-family: trajan;
+    margin-bottom: 200px;
+}
+
+.banner h1 { font-size: 48px; margin: 0; font-weight: bold;}
+.banner h2 { font-size: 24px; margin: 10px 0 0; }
+
+.banner h2 a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.banner h2 a:hover {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.content h2 {
+    font-family: trajan;
+    margin-bottom: 20px;
+    border-bottom:black 1px solid ;
+}
+
+.content h2::first-letter {
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #d2c8a5b7;
+    border: black 1px solid;
+    padding: 20px;
+    text-align: left;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar ul li {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #3D2424;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    padding: 10px 15px;
+    border-left: 3px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: rgb(130, 18, 18);
+    border-left: 3px solid rgb(130, 18, 18);
+}
+
+.sidebar ul li a.active {
+    color: rgb(141, 18, 18);
+    border-left: 3px solid rgb(141, 18, 18);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.content section.row { display: flex; }
+
+.content section .text {
+    margin-right: 30px;
+    text-align: justify;
+}
+
+.content section .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.content section .info img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.content section .info .link {
+    width: 300px;
+}
+
+.content section h3 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.content section h3 .sign {
+    font-size: 20px;
+    font-weight: bold;
+    width: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: black 1px solid;
+    border-radius: 50%;
+}
+
+.content section h3 + p {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.content section h3 + p.active {
+    max-height: 500px;
+}
+
+.text ul li a {
+    color: #3D2424;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.text ul li {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.text ul li a:hover {
+    color: rgb(130, 18, 18);
+}
+
+.info {
+    background-color: #e2e0d6b7;
+    padding: 15px;
+    text-align: center;
+}
+
+.info a img { width: 100%; height: auto; }
+.info img:hover { cursor: pointer; }
+
+.link a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #3D2424;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.link a:hover { color: #7773ca; }
+
+.footer {
+    background-color: #3D2424;
+    color: white;
+}
+
+@media (min-width: 992px) {
+  .page .row > .col {
+    margin-left: 30px;
+  }
+  .navbar-nav {
+    gap: 4rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-link { font-size: 12px; padding: 5px 10px; }
+
+    .banner { height: 250px; }
+    .banner h1 { font-size: 32px; }
+    .banner h2 { font-size: 18px; }
+
+    .sidebar {
+        width: 100%;
+        position: sticky;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .sidebar ul li a { font-size: 14px; padding: 6px; }
+
+    .content section .text { margin-right: 0; }
+    .content section .info img { width: 200px; }
+
+    .separator img { width: 50px; }
+}
