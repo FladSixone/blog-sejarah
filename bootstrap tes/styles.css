@@ -27,6 +27,20 @@ hr {
     z-index: 1000;
 }
 
+.burger-menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 0 12px;
+    line-height: 1;
+}
+
+.burger-menu:focus {
+    outline: none;
+}
+
 .navbar .nav-link {
     color: rgb(251, 251, 251);
     text-decoration: none;
@@ -129,7 +143,7 @@ hr {
 }
 
 .sidebar {
-    width: 220px;
+    width: 200px;
     background-color: #d2c8a5b7;
     border: black 1px solid;
     padding: 20px;
@@ -273,13 +287,82 @@ hr {
     color: white;
 }
 
+.mobile-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1040;
+}
+
+.mobile-sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 260px;
+    height: 100%;
+    background-color: #d2c8a5;
+    border-right: 1px solid black;
+    z-index: 1050;
+    transition: left 0.3s ease;
+    padding: 20px;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+    overflow-y: auto;
+}
+
+.mobile-sidebar.open {
+    left: 0;
+}
+
+.mobile-sidebar-header {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#closeMobileSidebar {
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: #3D2424;
+}
+
+.mobile-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-sidebar ul li {
+    margin: 20px 0;
+}
+
+.mobile-sidebar ul li a {
+    text-decoration: none;
+    color: #3D2424;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+}
+
+.mobile-sidebar ul li a:hover,
+.mobile-sidebar ul li a.active {
+    border-left-color: #710f0f;
+    color: #710f0f;
+}
+
 @media (min-width: 992px) {
-  .page .row > .col {
-    margin-left: 30px;
-  }
-  .navbar-nav {
-    gap: 4rem !important;
-  }
+    .page .row > .col {
+        margin-left: 30px;
+    }
+    .navbar-nav {
+        gap: 4rem !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -290,16 +373,10 @@ hr {
     .banner h2 { font-size: 18px; }
 
     .sidebar {
-        width: 100%;
-        position: sticky;
-        padding: 10px;
-        font-size: 14px;
+        display: none;
     }
-
-    .sidebar ul li a { font-size: 14px; padding: 6px; }
 
     .content section .text { margin-right: 0; }
     .content section .info img { width: 200px; }
 
-    .separator img { width: 50px; }
 }
