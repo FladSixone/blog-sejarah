@@ -27,28 +27,57 @@ hr {
     z-index: 1000;
 }
 
+.navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
 .burger-menu {
     background: none;
     border: none;
     color: white;
     font-size: 28px;
     cursor: pointer;
-    padding: 0 12px;
+    padding: 0;
     line-height: 1;
+    display: flex;
+    align-items: center;
+    height: auto;
+    order: 1;
 }
 
-.burger-menu:focus {
-    outline: none;
+.placeholder {
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    order: 3;
+}
+
+.nav-links-container {
+    order: 2;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav {
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
 
 .navbar .nav-link {
     color: rgb(251, 251, 251);
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 8px 12px;
     transition: color 0.3s, font-weight 0.3s;
     position: relative;
-    font-size: 30px;
+    font-size: 14px;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 .navbar .nav-link:hover {
@@ -287,6 +316,7 @@ hr {
     color: white;
 }
 
+/* Mobile kampvret */
 .mobile-overlay {
     display: none;
     position: fixed;
@@ -363,20 +393,53 @@ hr {
     .navbar-nav {
         gap: 4rem !important;
     }
+    .navbar .nav-link {
+        font-size: 30px;
+        padding: 8px 16px;
+    }
 }
 
 @media (max-width: 768px) {
-    .navbar .nav-link { font-size: 12px; padding: 5px 10px; }
-
-    .banner { height: 250px; }
-    .banner h1 { font-size: 32px; }
-    .banner h2 { font-size: 18px; }
-
-    .sidebar {
+    .navbar-nav {
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        gap: 0.25rem !important;
+    }
+    .navbar .nav-link {
+        font-size: 10px !important;
+        padding: 5px 4px !important;
+        white-space: nowrap;
+    }
+    .nav-links-container {
+        flex: 1;
+        justify-content: center;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+    .nav-links-container::-webkit-scrollbar {
         display: none;
     }
-
-    .content section .text { margin-right: 0; }
-    .content section .info img { width: 200px; }
-
+    .burger-menu {
+        font-size: 24px;
+        padding: 0 6px;
+    }
+    .placeholder {
+        width: 28px;
+    }
+    .banner {
+        height: 250px;
+    }
+    .banner h1 {
+        font-size: 32px;
+    }
+    .banner h2 {
+        font-size: 18px;
+    }
+    .content section .text {
+        margin-right: 0;
+    }
+    .content section .info img {
+        width: 200px;
+    }
 }
