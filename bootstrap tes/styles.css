@@ -316,7 +316,6 @@ hr {
     color: white;
 }
 
-/* Mobile kampvret */
 .mobile-overlay {
     display: none;
     position: fixed;
@@ -403,7 +402,7 @@ hr {
     .navbar-nav {
         flex-direction: row !important;
         flex-wrap: nowrap !important;
-        gap: 0.25rem !important;
+        gap: 1rem !important;
     }
     .navbar .nav-link {
         font-size: 10px !important;
@@ -431,7 +430,7 @@ hr {
         height: 250px;
     }
     .banner h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
     .banner h2 {
         font-size: 18px;
