@@ -48,14 +48,6 @@ hr {
     order: 1;
 }
 
-.placeholder {
-    width: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    order: 3;
-}
-
 .nav-links-container {
     order: 2;
     flex: 1;
@@ -101,9 +93,9 @@ hr {
 }
 
 .navbar .nav-link.active {
-    color: rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255) ;
     font-weight: bold;
-    background-color: transparent !important;
+    background-color: transparent ;
 }
 
 .navbar .nav-link.active::after {
@@ -239,6 +231,11 @@ hr {
 .content section .info img {
     width: 300px;
     height: auto;
+    transition: all 0.5S ease-in-out;
+}
+
+.content section .info img:hover {
+    transform: scale(1.05);
 }
 
 .content section .info .link {

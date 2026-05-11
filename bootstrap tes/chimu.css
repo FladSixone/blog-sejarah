@@ -77,9 +77,9 @@ body {
 }
 
 .card {
-  background-color: #aa9d9d !important;
-  border: none !important;
-  border-radius: 0 !important;
+  background-color: #aa9d9d ;
+  border: none ;
+  border-radius: 0 ;
   padding: 20px;
   margin: 0;
   display: flex;
@@ -108,7 +108,7 @@ body {
   margin-bottom: 20px;
   display: block;
   padding-bottom: 10px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid black ;
 
   transform: translateY(100%);
   opacity: 0;
@@ -116,6 +116,19 @@ body {
   will-change: transform, opacity;
 
   animation: revealUp 0.8s ease-out forwards;
+}
+
+.card img:hover {
+  cursor: pointer;
+}
+
+.tooltip {
+  font-family: trajan;
+  letter-spacing: 1px;
+}
+
+.tooltip .phos {
+  font-size: 12px;
 }
 
 .card p {
@@ -133,6 +146,8 @@ body {
 .content li:nth-child(3) img { animation-delay: 1.6s; }
 .content li:nth-child(4) img { animation-delay: 1.8s; }
 
+.content li:nth-child(4) h2::first-letter { color: rgb(117, 207, 177);  }
+
 .button {
   color: white;
   padding: 10px 40px;
@@ -147,8 +162,29 @@ body {
   padding: 20px 30px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: bold;
+}
+
+.footer img {
+  width: 30%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(100%);
+  position: absolute;
+}
+
+.footer img:hover{
+  filter: grayscale(0%);
+}
+
+.footer .blockquote p{
+  font-size: 14px;
+}
+
+.footer .blockquote-footer {
+  font-size: 10px;
 }
 
 @media (min-width: 769px) {
@@ -181,7 +217,7 @@ body {
   }
 
   .button button {
-    padding: 15px 30px;
+    padding: 15px 15px;
     font-size: 16px;
   }
 }
