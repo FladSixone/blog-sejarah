@@ -4,90 +4,81 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="assets/valentine.gif">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="navbar">
-            <ul>
-                <li><a href="#" class="nav-page active" data-page="page1">Industri 1.0</a></li>
-                <li><a href="#" class="nav-page" data-page="page2">Industri 2.0</a></li>
-                <li><a href="#" class="nav-page" data-page="page3">Industri 3.0</a></li>
-                <li><a href="#" class="nav-page" data-page="page4">Industri 4.0</a></li>
-            </ul>
-        </div>
-
-        <div id="page1" class="page active-page">
-            <div class="banner">
-                <div class="text">
-                    <h1>REVOLUSI INDUSTRI 1.0</h1>
-                    <h2><a href="whyimadethisthing.html">(Kelompok, Anggota)</a></h2>
-                </div>
-            </div>
-            <div class="container">
-                <div class="sidebar">
-                    <ul>
-                        <li><a href="#konten1">Revolusi Industri 1.0</a></li>
-                        <li><a href="#konten2">Latar Belakang</a></li>
-                        <li><a href="#konten3">Dampak</a></li>
-                        <li><a href="#konten4">Penemuan</a></li>
-                        <li><a href="#konten5">Trivia</a></li>
-                        <li><a href="#konten6">Sumber</a></li>
+        <nav class="navbar navbar-expand-md sticky-top">
+            <div class="container-fluid align-items-center">
+                <button class="burger-menu d-md-none" id="burgerBtn">☰</button>
+                <div class="nav-links-container flex-grow-1 d-flex justify-content-center">
+                    <ul class="navbar-nav flex-row flex-wrap gap-3 py-3">
+                        <li class="nav-item"><a href="#" class="nav-link nav-page active" data-page="page1">Industri 1.0</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link nav-page" data-page="page2">Industri 2.0</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link nav-page" data-page="page3">Industri 3.0</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link nav-page" data-page="page4">Industri 4.0</a></li>
                     </ul>
                 </div>
-                <div class="content">
-                    <section id="konten1">
-                        <div class="text">
-                            <h2>Revolusi Industri 1.0</h2>
-                            <p>Revolusi Industri pertama dimulai dengan peralihan tenaga kerja yang sebelumnya menggunakan tenaga manusia dan hewan, digantikan dengan penggunaan mesin manufaktur. Revolusi Industri dimulai dari Britania Raya pada tahun 1760-an dan kemudian menyebar ke seluruh Eropa Barat, Amerika Utara, Jepang, dan menyebar ke seluruh dunia.</p>
-                            <p>Perubahan besar ini mengubah cara manusia dalam mengelola sumber daya dan memproduksi produk, khususnya di pertanian, manufaktur, transportasi, pertambangan, dan teknologi di seluruh dunia. Proses produksi menjadi lebih cepat, efisien, dan mudah.</p>
+            </div>
+        </nav>
+
+        <!-- Page 1 -->
+        <div id="page1" class="page active-page">
+            <div class="banner d-flex justify-content-center align-items-center">
+                <div class="text text-center">
+                    <h1>REVOLUSI INDUSTRI 1.0</h1>
+                    <h2><a href="chimu.html">(Kelompok, Anggota)</a></h2>
+                </div>
+            </div>
+            <div class="container-fluid px-4 my-4">
+                <div class="row g-4">
+                    <div class="col-auto d-none d-md-block">
+                        <div class="sidebar">
+                            <ul class="list-unstyled">
+                                <li><a href="#konten1">Revolusi Industri 1.0</a></li>
+                                <li><a href="#konten2">Latar Belakang</a></li>
+                                <li><a href="#konten3">Dampak</a></li>
+                                <li><a href="#konten4">Penemuan</a></li>
+                                <li><a href="#konten5">Trivia</a></li>
+                                <li><a href="#konten6">Sumber</a></li>
+                            </ul>
                         </div>
-                        <div class="info">
-                            <img src="assets/steamengine.png" id="gambar" alt="Gambar 1">
-                            <div class="link">
-                                <a href="#" target="_blank">Mesin Uap. Air mendidih menghasilkan uap bertekanan tinggi yang mendorong piston untuk menggerakkan mesin.</a>
-                            </div>
-                        </div>
-                    </section>
-                    <!--
-                    <span class="separator">
-                        <img src="assets/didio.png" alt="Separator" data-sound="sound9">
-                        <img src="assets/kars.webp" alt="Separator" data-sound="sound8">
-                        <img src="assets/dio.gif" alt="Separator" data-sound="sound3">
-                        <img src="assets/kira.gif" alt="Separator" data-sound="sound2">
-                        <img src="assets/diavolo.webp" alt="Separator" data-sound="sound4">
-                        <img src="assets/pucci.png" alt="Separator" data-sound="sound5">
-                        <img src="assets/valentine.gif" alt="Separator" data-sound="sound6">
-                        <img src="assets/wonder.gif" alt="Separator" data-sound="sound7">
-                    </span>
-                    -->
-                    <section id="konten2">
-                        <div class="text">
-                            <h2>Latar Belakang</h2>
-                            <p>Revolusi Industri dilatarbelakangi oleh Abad Pencerahan di abad ke-17 dimana penalaran akal dan logika mulai diutamakan. Abad Pencerahan menyebabkan munculnya gerakan intelektual, ilmiah dan filsafat pada Eropa. Berkat adanya produk makanan dan minuman yang berasal dari perdagangan berbagai wilayah dunia sebagai variasi nutrisi, juga minuman seperti kopi yang lebih sering dimasak agar menghilangkan bakteri, Eropa dapat berpulih dari era dimana wabah dan kematian sering terjadi. Kenaikan tingkat usia dan kesehatan membuat rakyat Eropa mampu memiliki waktu untuk belajar dan berinovasi di luar pekerjaan.</p>
-                            <p>Pada tahun 1733, penemu Inggris bernama John Kay mempatenkan inovasi alat tenun mekanisnya yang bernama “flying shuttle”. Alat ini memungkinkan satu penenun melempar ulang-alik secara otomatis melintasi benang lusi menggunakan tuas. Berkat penemuan ini, kecepatan produksi kain lebar menjadi lebih cepat. Akibat dari peningkatan akan permintaan produksi benang katun, pengrajin James Hargreaves menciptakan mesin pemintal bernama “spinning jenny”, yang kemudian diperbarui menggunakan bingkai roda air agar benang yang diproduksi menjadi lebih kuat. Mesin-mesin tersebut dimekanisasikan menggunakan mesin air dan kemudian menggunakan mesin uap pada pabrik-pabrik kapas besar di Inggris.</p>
-                            <p>Mesin uap yang paling sukses adalah buatan Thomas Newcomen, dimana ia menggunakan mekanisme dan otomatisasi mesin untuk menarik air dari tambang-tambang agar mineral seperti batu-bara lebih gampang dicari. Karena produksi batu-bara yang semakin menaik, lebih banyak juga mesin uap yang kemudian menggunakan bahan bakar dari batu bara. Mesin uap Newcomen secara bertahap digantikan setelah tahun 1775 di daerah-daerah di mana batu bara mahal (terutama di Cornwall) oleh desain yang lebih baik, yang diciptakan oleh James Watt. </p>
-                    </section>
-                    <section id="konten3">
-                        <div class="text">
-                            <h2>Dampak</h2>
+                    </div>
+                    <div class="col">
+                        <div class="content">
+                            <section id="konten1" class="row g-4 align-items-start">
+                                <div class="col-md text-col">
+                                    <div class="text">
+                                        <h2>Revolusi Industri 1.0</h2>
+                                        <p>Revolusi Industri pertama dimulai dengan peralihan tenaga kerja yang sebelumnya menggunakan tenaga manusia dan hewan, digantikan dengan penggunaan mesin manufaktur. Revolusi Industri dimulai dari Britania Raya pada tahun 17 dan kemudian menyebar ke seluruh Eropa Barat, Amerika Utara, Jepang, dan menyebar ke seluruh dunia.</p>
+                                        <p>Perubahan besar ini mengubah cara manusia dalam mengelola sumber daya dan memproduksi produk, khususnya di pertanian, manufaktur, transportasi, pertambangan, dan teknologi di seluruh dunia. Proses produksi menjadi lebih cepat, efisien, dan mudah.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-auto">
+                                    <div class="info text-center">
+                                        <a href="#" title="Mesin Uap" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="left" data-bs-content="Air mendidih menghasilkan uap bertekanan tinggi yang mendorong piston untuk menggerakkan mesin.">
+                                            <img src="assets/steamengine.png" id="gambar" alt="Gambar 1" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="konten2">
+                                <div class="text">
+                                    <h2>Latar Belakang</h2>
+                                    <p>Revolusi Industri dilatarbelakangi oleh Abad Pencerahan di abad ke-17 dimana penalaran akal dan logika mulai diutamakan. Abad Pencerahan menyebabkan munculnya gerakan intelektual, ilmiah dan filsafat pada Eropa.</p>
+                                </div>
+                            </section>
+                            <section id="konten3">
+                                <div class="text">
+                                    <h2>Dampak</h2>
                             <p>Revolusi Industri menciptakan pembagian kerja yang lebih baik. Petani bisa fokus pertanian, dan pekerja tekstil dapat fokus pada pembuatan tekstil, ini lebih efisien daripada jika setiap keluarga melakukan setiap jenis pekerjaan untuk melengkapi kebutuhan pokoknya.</p>
                             <p>Revolusi Industri juga memiliki dampak negatif seperti kerusakan lingkungan akibat polusi asap mesin uap dan limbah pabrik, serta memburuknya kondisi sosial. Hal ini ditandai dengan eksploitasi tenaga kerja dengan upah rendah, urbanisasi padat yang menimbulkan kumuh, serta hampir punahnya usaha kecil.</p>
-                        </div>
-                    </section>
-                    <section id="konten4">
-                        <div class="text">
-                            <h2>Penemuan</h2>
-                        <!--
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        -->
+                                </div>
+                            </section>
+                            <section id="konten4">
+                                <div class="text">
+                                    <h2>Penemuan</h2>
                             <p>Alat Pemintal Benang - Spinning Jenny (James Hargreaves, 1767):<br> Ditemukan oleh James Hargreaves, memungkinkan satu pekerja memintal banyak benang sekaligus, mempercepat produksi tekstil secara drastis.</p>
                             <p>Water Frame (Richard Arkwright, 1769):<br> Mesin pemintal benang bertenaga air yang diciptakan oleh Richard Arkwright, menghasilkan benang yang lebih kuat.</p>
                             <p>Mesin Uap (1769/1775):<br> Merupakan inovasi paling krusial yang menyempurnakan mesin uap sebelumnya untuk menggerakkan pabrik, mesin pertambangan, dan transportasi.</p>
@@ -95,10 +86,10 @@
                             <p>Lokomotif Uap (Richard Trevithick, 1804):<br> Penggunaan mesin uap pada transportasi darat, yang kemudian disempurnakan menjadi kereta api penumpang oleh George Stephenson.</p>
                             <p>Semen Portland atau OPC (1824):<br> Ditemukan oleh Joseph Aspdin, dengan menggunakan batu kapur yang awalnya digali di Portland. Jenis semen ini menjadi bahan dasar yang paling umum dalam konstruksi beton modern.</p>
                             <p>Telegraf (Samuel F.B. Morse, 1837):<br> Alat komunikasi jarak jauh yang digunakan untuk mengirim dan menerima pesan singkat menggunakan sinyal listrik dan kode Morse melalui media kawat.</p>
-                        </div>
-                    </section>
-                    <section id="konten5">
-                        <div class="text">
+                                </div>
+                            </section>
+                            <section id="konten5">
+                                <div class="text">
                             <h2>Trivia</h2>
                             <h3>
                                <span class="sign">+</span> James Watt dan ketel yang mendidih
@@ -120,325 +111,299 @@
                             <br>
                             4.	Bahwa kultur dan pemikiran Eropa sesungguhnya lebih bagus dibanding wilayah lain. Teori ini kontroversial karena tidak ada buktinya kecuali era Abad Pencerahan, dan biasanya hanya digunakan oleh pendukung ideologi Eurosentrisme.
                             </p>
+                                </div>
+                            </section>
+                            <section id="konten6">
+                                <div class="text">
+                                    <h2>Sumber</h2>
+                                    <ul>
+                                        <li><a href="https://www.britannica.com/event/Industrial-Revolution" target="_blank">Britannica - Industrial Revolution</a></li>
+                                        <li><a href="https://www.history.com/topics/industrial-revolution" target="_blank">History - Industrial Revolution</a></li>
+                                        <li><a href="https://www.khanacademy.org/humanities/world-history/1750-1900/industrial-revolution/a/the-industrial-revolution" target="_blank">Khan Academy - The Industrial Revolution</a></li>
+                                        <li><a href="https://www.bbc.co.uk/history/british/victorians/launch_victorian_01.shtml" target="_blank">BBC - The Victorian Era</a></li>
+                                        <li><a href="https://www.nationalgeographic.com/history/article/industrial-revolution" target="_blank">National Geographic - Industrial Revolution</a></li>
+                                    </ul>
+                                </div>
+                            </section>
                         </div>
-                    </section>
-                    <section id="konten6">
-                        <div class="text">
-                            <h2>Sumber</h2>
-                                <ul>
-                                    <li><a href="https://www.britannica.com/event/Industrial-Revolution" target="_blank">Britannica - Industrial Revolution</a></li>
-                                    <li><a href="https://www.history.com/topics/industrial-revolution" target="_blank">History - Industrial Revolution</a></li>
-                                    <li><a href="https://www.youtube.com/playlist?list=PLeufnI_paNP2K9TQZPlLyegWw6y6lc6MK" target="_blank">Industrial Revolution Crash Course World History</a></li>
-                                    <li><a href="https://en.wikipedia.org/wiki/Industrial_Revolution" target="_blank">Wikipedia - Industrial Revolution</a></li>
-                                    <li><a href="https://en.wikipedia.org/wiki/Thomas_Newcomen" target="_blank">Wikipedia - Thomas Newcomen</a></li>
-                                    
-                                    <!--
-                                    <li><a href="https://www.khanacademy.org/humanities/world-history/1750-1900/industrial-revolution/a/the-industrial-revolution" target="_blank">Khan Academy - The Industrial Revolution</a></li>
-                                    <li><a href="https://www.bbc.co.uk/history/british/victorians/launch_victorian_01.shtml" target="_blank">BBC - The Victorian Era</a></li>
-                                    <li><a href="https://www.nationalgeographic.com/history/article/industrial-revolution" target="_blank">National Geographic - Industrial Revolution</a></li>
-                                    -->
-                                    <!--
-                                    <li><a href="https://www.britannica.com/event/Industrial-Revolution" target="_blank">its just a auto fill link</a></li>
-                                    <li><a href="https://www.britannica.com/event/Industrial-Revolution" target="_blank">its just a auto fill link</a></li>
-                                    <li><a href="https://www.britannica.com/event/Industrial-Revolution" target="_blank">its just a auto fill link</a></li>
-                                    -->
-                                </ul>
-                        </div>
-                    </section>
-
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!--Industri 2-->
+        <!-- Page 2 -->
         <div id="page2" class="page">
-            <div class="banner banner-page2">
-                <div class="text">
+            <div class="banner banner-page2 d-flex justify-content-center align-items-center">
+                <div class="text text-center">
                     <h1>REVOLUSI INDUSTRI 2.0</h1>
-                    <h2><a href="whyimadethisthing.html">(Kelompok, Anggota)</a></h2>
+                    <h2><a href="chimu.html">(Kelompok, Anggota)</a></h2>
                 </div>
             </div>
-            <div class="container">
-                <div class="sidebar">
-                    <ul>
-                        <li><a href="#p2konten1">Revolusi Industri 2.0</a></li>
-                        <li><a href="#p2konten2">Latar Belakang</a></li>
-                        <li><a href="#p2konten3">Dampak</a></li>
-                        <li><a href="#p2konten4">Penemuan</a></li>
-                        <li><a href="#p2konten5">Trivia</a></li>
-                        <li><a href="#p2konten6">Sumber</a></li>
-                    </ul>
-                </div>
-                <div class="content">
-                    <section id="p2konten1">
-                        <div class="text">
-                            <h2>Revolusi Industri 2.0</h2>
-                            <p>Revolusi Industri kedua adalah fase dimana industrialisasi menjadi semakin pesat dengan adanya standardisasi dan produksi massal. </p>
-                            <p>Kemajuan pada bidang manufaktur dan teknologi produksi memungkinkan pengadopsian secara luas dari teknologi yang sudah ada sebelumnya seperti sistem telegraf dan jaringan kereta api, gas dan air bersih, dan sistem pembuangan limbah, yang sebelumnya hanya terkonsentrasi di beberapa kota saja. Ekspansi kereta api dan jalur telegraf besar-besaran setelah tahun 1870 memungkinkan pergerakan orang dan ide yang belum pernah terjadi sebelumnya, memunculkan gelombang baru globalisasi. Dalam periode waktu yang sama, sistem teknologi baru diperkenalkan, yang paling signifikan adalah listrik dan telepon. Revolusi Industri Kedua berlanjut ke abad ke-20 dengan elektrifikasi awal pabrik-pabrik dan lini produksi. Revolusi Industri Kedua berakhir pada awal Perang Dunia 1 karena negara-negara yang berfokus dengan perang, sehingga masa itu digantikan oleh Zaman Mesin yang tetap mengembangkan teknologi secara pesat untuk keperluan perang</p>
+            <div class="container-fluid px-4 my-4">
+                <div class="row g-4">
+                    <div class="col-auto d-none d-md-block">
+                        <div class="sidebar">
+                            <ul class="list-unstyled">
+                                <li><a href="#p2konten1">Revolusi Industri 2.0</a></li>
+                                <li><a href="#p2konten2">Latar Belakang</a></li>
+                                <li><a href="#p2konten3">Dampak</a></li>
+                                <li><a href="#p2konten4">Penemuan</a></li>
+                                <li><a href="#p2konten5">Trivia</a></li>
+                                <li><a href="#p2konten6">Sumber</a></li>
+                            </ul>
                         </div>
-                        <div class="info">
-                            <img src="assets/train.jpg" alt="Gambar Industri 2.0">
-                            <div class="link">
-                                <a href="#" target="_blank">Kereta Api pada awalnya menggunakan batu-bara dan mesin uap. Tetapi seiring waktu digantikan dengan teknologi listrik seperti kereta tram, dan kemudian menggunakan diesel.</a>
-                            </div>
+                    </div>
+                    <div class="col">
+                        <div class="content">
+                            <section id="p2konten1" class="row g-4 align-items-start">
+                                <div class="col-md text-col">
+                                    <div class="text">
+                                        <h2>Revolusi Industri 2.0</h2>
+                                        <p>Revolusi Industri kedua adalah fase dimana industrialisasi menjadi semakin pesat dengan adanya standardisasi dan produksi massal. </p>
+                                        <p>Kemajuan pada bidang manufaktur dan teknologi produksi memungkinkan pengadopsian secara luas dari teknologi yang sudah ada sebelumnya seperti sistem telegraf dan jaringan kereta api, gas dan air bersih, dan sistem pembuangan limbah, yang sebelumnya hanya terkonsentrasi di beberapa kota saja. Ekspansi kereta api dan jalur telegraf besar-besaran setelah tahun 1870 memungkinkan pergerakan orang dan ide yang belum pernah terjadi sebelumnya, memunculkan gelombang baru globalisasi. Dalam periode waktu yang sama, sistem teknologi baru diperkenalkan, yang paling signifikan adalah listrik dan telepon. Revolusi Industri Kedua berlanjut ke abad ke-20 dengan elektrifikasi awal pabrik-pabrik dan lini produksi. Revolusi Industri Kedua berakhir pada awal Perang Dunia 1 karena negara-negara yang berfokus dengan perang, sehingga masa itu digantikan oleh Zaman Mesin yang tetap mengembangkan teknologi secara pesat untuk keperluan perang</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-auto">
+                                    <div class="info text-center">
+                                        <a href="#" title="Kereta Api" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="left" data-bs-content="Kereta Api pada awalnya menggunakan batu-bara dan mesin uap. Tetapi seiring waktu digantikan dengan teknologi listrik seperti kereta tram, dan kemudian menggunakan diesel.">
+                                        <img src="assets/train.jpg" alt="Gambar Industri 2.0" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="p2konten2">
+                                <div class="text">
+                                    <h2>Latar Belakang</h2>
+                                    <p>Kemajuan pada bidang manufaktur dan teknologi produksi memungkinkan pengadopsian secara luas dari teknologi yang sudah ada sebelumnya seperti sistem telegraf dan jaringan kereta api, gas dan air bersih, dan sistem pembuangan limbah, yang sebelumnya hanya terkonsentrasi di beberapa kota saja. Ekspansi kereta api dan jalur telegraf besar-besaran setelah tahun 1870 memungkinkan pergerakan orang dan ide yang belum pernah terjadi sebelumnya, memunculkan gelombang baru globalisasi. Dalam periode waktu yang sama, sistem teknologi baru diperkenalkan, yang paling signifikan adalah listrik dan telepon. Revolusi Industri Kedua berlanjut ke abad ke-20 dengan elektrifikasi awal pabrik-pabrik dan lini produksi, dan berakhir pada awal Perang Dunia I.</p>
+                                </div>
+                            </section>
+                            <section id="p2konten3">
+                                <div class="text">
+                                    <h2>Dampak</h2>
+                                    <p>Revolusi Industri 2.0 (sekitar 1870-1914) berdampak besar melalui pengenalan energi listrik, produksi massal, dan lini perakitan (assembly line). Dampak utamanya meliputi efisiensi produksi barang yang meningkat pesat, penurunan harga jual, inovasi transportasi seperti mobil dan pesawat, serta munculnya pekerja anak.</p>
+                                </div>
+                            </section>
+                            <section id="p2konten4">
+                                <div class="text">
+                                    <h2>Penemuan</h2>
+                                    <p><b>Rem Angin - (George Westinghouse, 1872) :</b><br>Memperoleh hak paten untuk sistem cerdik yang menggunakan tekanan udara untuk menahan rem kereta api.</p>
+                                    <p><b>Bola Lampu - (Thomas Alva Edion, 1879 :)</b><br>Terobosannya yang paling berpengaruh adalah penemuan dan pemasaran bola lampu pijar pertama yang tahan lama dan praktis untuk digunakan secara luas.</p>
+                                    <p><b>Penyulingan minyak bumi - (William Burton, 1900)</b><br>Seorang ahli kimia di Indiana, mengembangkan proses penyulingan minyak bumi.Di mana minyak mentah ditempatkan di dalam wadah dan dipanaskan hingga mencapai suhu lebih dari 700 derajat Fahrenheit.</p>
+                                    <p>
+                                        <b>Keyboard QWERTY - (Christopher Latham Sholes, 1878)</b><br>
+                                        Mantan jurnalis dan inspektur bea cukai, muncul dengan ide untuk melengkapi mesin tik dengan keyboard QWERTY.Susunan huruf tersebut dirancang untuk sedikit memperlambat jari juru ketik dan mencegah mesin tik macet.
+                                    </p>
+                                    <p>
+                                        <b>Nirkabel / Wireless (Guglielmo Marconi, 1890)</b><br>
+                                        
+                                    </p>                                    
+                                </div>
+                            </section>
+                            <section id="p2konten5">
+                                <div class="text">
+                                    <h2>Trivia</h2>
+                                    <h3><span class="sign">+</span> Kenapa ....?</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <hr>
+                                </div>
+                            </section>
+                            <section id="p2konten6">
+                                <div class="text">
+                                    <h2>Sumber</h2>
+                                    <ul>
+                                        <li><a href="https://www.britannica.com/event/Industrial-Revolution" target="_blank">Britannica - Industrial Revolution</a></li>
+                                        <li><a href="https://www.history.com/topics/industrial-revolution" target="_blank">History - Industrial Revolution</a></li>
+                                        <li><a href="https://www.khanacademy.org/humanities/world-history/1750-1900/industrial-revolution/a/the-industrial-revolution" target="_blank">Khan Academy - The Industrial Revolution</a></li>
+                                        <li><a href="https://www.bbc.co.uk/history/british/victorians/launch_victorian_01.shtml" target="_blank">BBC - The Victorian Era</a></li>
+                                        <li><a href="https://www.nationalgeographic.com/history/article/industrial-revolution" target="_blank">National Geographic - Industrial Revolution</a></li>
+                                    </ul>
+                                </div>
+                            </section>
                         </div>
-                    </section>
-                    <!--
-                    <span class="separator">                    
-                        <img src="assets/dio.gif" alt="Separator">
-                        <img src="assets/dio.gif" alt="Separator">
-                        <img src="assets/dio.gif" alt="Separator"> 
-                    </span>
-                     -->
-                    <section id="p2konten2">
-                        <div class="text">
-                            <h2>Latar Belakang</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                    </section>
-                    <section id="p2konten3">
-                        <div class="text">
-                            <h2>Dampak</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                    </section>
-                    <section id="p2konten4">
-                        <div class="text">
-                            <h2>Penemuan</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
-                    </section>
-                    <section id="p2konten5">
-                        <div class="text">
-                            <h2>Trivia</h2>
-                            <h3>
-                                <span class="sign">+</span> Kenapa ....?
-                            </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <hr>
-                        </div>
-                    </section>
-                    <section id="p2konten6">
-                        <div class="text">
-                            <h2>Sumber</h2>
-                                <ul>
-                                    <li><a href="https://www.britannica.com/event/Industrial-Revolution" target="_blank">Britannica - Industrial Revolution</a></li>
-                                    <li><a href="https://www.history.com/topics/industrial-revolution" target="_blank">History - Industrial Revolution</a></li>
-                                    <li><a href="https://www.khanacademy.org/humanities/world-history/1750-1900/industrial-revolution/a/the-industrial-revolution" target="_blank">Khan Academy - The Industrial Revolution</a></li>
-                                    <li><a href="https://www.bbc.co.uk/history/british/victorians/launch_victorian_01.shtml" target="_blank">BBC - The Victorian Era</a></li>
-                                    <li><a href="https://www.nationalgeographic.com/history/article/industrial-revolution" target="_blank">National Geographic - Industrial Revolution</a></li>
-                                </ul>
-                        </div>
-                    </section>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!--Industri 3-->
+        <!-- Page 3 -->
         <div id="page3" class="page">
-            <div class="banner banner-page3">
-                <div class="text">
+            <div class="banner banner-page3 d-flex justify-content-center align-items-center">
+                <div class="text text-center">
                     <h1>REVOLUSI INDUSTRI 3.0</h1>
-                    <h2><a href="whyimadethisthing.html">(Kelompok, Anggota)</a></h2>
+                    <h2><a href="chimu.html">(Kelompok, Anggota)</a></h2>
                 </div>
             </div>
-            <div class="container">
-                <div class="sidebar">
-                    <ul>
-                        <li><a href="#p3konten1">Revolusi Industri 3.0</a></li>
-                        <li><a href="#p3konten2">Latar Belakang</a></li>
-                        <li><a href="#p3konten3">Dampak</a></li>
-                        <li><a href="#p3konten4">Penemuan</a></li>
-                        <li><a href="#p3konten5">Trivia</a></li>
-                        <li><a href="#p3konten6">Sumber</a></li>
-                    </ul>
-                </div>
-                <div class="content">
-                    <section id="p3konten1">
-                        <div class="text">
-                            <h2>Revolusi Industri 3.0</h2>
-                            <p>
-                                Revolusi Industri Ketiga juga disebut dengan Zaman Informasi karena teknologi yang memungkinkan pertukaran informasi menjadi lebih mudah. Kemunculan Zaman Informasi dapat diasosiasikan dengan pengembangan teknologi transistor dan komputer.
-                            </p>
-                        </div>
-                        <div class="info">
-                            <img src="assets/ENIAC.jpg" alt="Gambar Industri 2.0">
-                            <div class="link">
-                                <a href="#" target="_blank">ENIAC (Electronic Numerical Integrator and Computer) adalah komputer elektronik pertama di dunia yang mampu diprogram ulang.</a>
-                            </div>
-                        </div>
-                    </section>
-                    <!--
-                    <span class="separator">
-                        
-                        <img src="assets/kira.gif" alt="Separator">
-                        <img src="assets/kira.gif" alt="Separator">
-                        <img src="assets/kira.gif" alt="Separator">
-                        
-                    </span>
-                    -->
-                    <section id="p3konten2">
-                        <div class="text">
-                            <h2>Latar Belakang</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </section>
-                    <section id="p3konten3">
-                        <div class="text">
-                            <h2>Dampak</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </section>
-                    <section id="p3konten4">
-                        <div class="text">
-                            <h2>Penemuan</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </section>
-                    <section id="p3konten5">
-                        <div class="text">
-                            <h2>Trivia</h2>
-                            <h3>
-                                <span class="sign">+</span> Kenapa ....?
-                            </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                          <hr>
-                        </div>
-                    </section>
-                    <section id="p3konten6">
-                        <div class="text">
-                            <h2>Sumber</h2>
-                            <ul>
-                                <li><a href="https://www.britannica.com/event/Industrial-Revolution" target="_blank">Britannica - Industrial Revolution</a></li>
-                                <li><a href="https://www.history.com/topics/industrial-revolution" target="_blank">History - Industrial Revolution</a></li>
-                                <li><a href="https://www.khanacademy.org/humanities/world-history/1750-1900/industrial-revolution/a/the-industrial-revolution" target="_blank">Khan Academy - The Industrial Revolution</a></li>
-                                <li><a href="https://www.bbc.co.uk/history/british/victorians/launch_victorian_01.shtml" target="_blank">BBC - The Victorian Era</a></li>
-                                <li><a href="https://www.nationalgeographic.com/history/article/industrial-revolution" target="_blank">National Geographic - Industrial Revolution</a></li>
+            <div class="container-fluid px-4 my-4">
+                <div class="row g-4">
+                    <div class="col-auto d-none d-md-block">
+                        <div class="sidebar">
+                            <ul class="list-unstyled">
+                                <li><a href="#p3konten1">Revolusi Industri 3.0</a></li>
+                                <li><a href="#p3konten2">Latar Belakang</a></li>
+                                <li><a href="#p3konten3">Dampak</a></li>
+                                <li><a href="#p3konten4">Penemuan</a></li>
+                                <li><a href="#p3konten5">Trivia</a></li>
+                                <li><a href="#p3konten6">Sumber</a></li>
                             </ul>
                         </div>
-                    </section>
+                    </div>
+                    <div class="col">
+                        <div class="content">
+                            <section id="p3konten1" class="row g-4 align-items-start">
+                                <div class="col-md text-col">
+                                    <div class="text">
+                                        <h2>Revolusi Industri 3.0</h2>
+                                        <p>Revolusi Industri Ketiga juga disebut dengan Zaman Informasi karena teknologi yang memungkinkan pertukaran informasi menjadi lebih mudah. Kemunculan Zaman Informasi dapat diasosiasikan dengan pengembangan teknologi transistor dan komputer.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-auto">
+                                    <div class="info text-center">
+                                        <a href="#" title="ENIAC" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="left" data-bs-content="ENIAC (Electronic Numerical Integrator and Computer) adalah komputer elektronik pertama di dunia yang mampu diprogram ulang.">
+                                        <img src="assets/ENIAC.jpg" alt="Gambar Industri 2.0" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="p3konten2">
+                                <div class="text">
+                                    <h2>Latar Belakang</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </section>
+                            <section id="p3konten3">
+                                <div class="text">
+                                    <h2>Dampak</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </section>
+                            <section id="p3konten4">
+                                <div class="text">
+                                    <h2>Penemuan</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </section>
+                            <section id="p3konten5">
+                                <div class="text">
+                                    <h2>Trivia</h2>
+                                    <h3><span class="sign">+</span> Kenapa ....?</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <hr>
+                                </div>
+                            </section>
+                            <section id="p3konten6">
+                                <div class="text">
+                                    <h2>Sumber</h2>
+                                    <ul>
+                                        <li><a href="https://www.britannica.com/event/Industrial-Revolution" target="_blank">Britannica - Industrial Revolution</a></li>
+                                        <li><a href="https://www.history.com/topics/industrial-revolution" target="_blank">History - Industrial Revolution</a></li>
+                                        <li><a href="https://www.khanacademy.org/humanities/world-history/1750-1900/industrial-revolution/a/the-industrial-revolution" target="_blank">Khan Academy - The Industrial Revolution</a></li>
+                                        <li><a href="https://www.bbc.co.uk/history/british/victorians/launch_victorian_01.shtml" target="_blank">BBC - The Victorian Era</a></li>
+                                        <li><a href="https://www.nationalgeographic.com/history/article/industrial-revolution" target="_blank">National Geographic - Industrial Revolution</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!--Industri 4-->
+        <!-- Page 4 -->
         <div id="page4" class="page">
-            <div class="banner banner-page4">
-                <div class="text">
+            <div class="banner banner-page4 d-flex justify-content-center align-items-center">
+                <div class="text text-center">
                     <h1>REVOLUSI INDUSTRI 4.0</h1>
-                    <h2><a href="whyimadethisthing.html">(Kelompok, Anggota)</a></h2>
+                    <h2><a href="chimu.html">(Kelompok, Anggota)</a></h2>
                 </div>
             </div>
-            <div class="container">
-                <div class="sidebar">
-                    <ul>
-                        <li><a href="#p4konten1">Revolusi Industri 4.0</a></li>
-                        <li><a href="#p4konten2">Latar Belakang</a></li>
-                        <li><a href="#p4konten3">Dampak</a></li>
-                        <li><a href="#p4konten4">Penemuan</a></li>
-                        <li><a href="#p4konten5">Trivia</a></li>
-                        <li><a href="#p4konten6">Sumber</a></li>
-                    </ul>
-                </div>
-                <div class="content">
-                    <section id="p4konten1">
-                        <div class="text">
-                            <a href="bootstrap tes/index.html">Bootstrap Test</a>
-                            <h2>Revolusi Industri 4.0</h2>
-                            <p>Revolusi Industri Keempat adalah keadaan industri abad ke-21 ketika perubahan besar-besaran di berbagai bidang lewat perpaduan teknologi yang mengurangi sekat-sekat antara dunia fisik, digital, dan biologi. Revolusi ini ditandai dengan kemajuan teknologi dalam berbagai bidang, khususnya kecerdasan buatan, robot, blockchain, teknologi nano, komputer kuantum, bioteknologi, Internet of Things (IoT), percetakan 3D, dan kendaraan tanpa awak.</p>
-                            <p>Seperti revolusi terdahulu, revolusi industri keempat berpotensi meningkatkan kualitas hidup masyarakat di seluruh dunia. Namun, kemajuan di bidang otomatisasi dan kecerdasan buatan telah menimbulkan kekhawatiran bahwa mesin-mesin suatu hari akan mengambil alih pekerjaan manusia. Selain itu, revolusi-revolusi sebelumnya masih dapat menghasilkan lapangan kerja baru untuk menggantikan pekerjaan yang diambil alih oleh mesin, sementara kali ini kemajuan kecerdasan buatan dan otomatisasi dapat menggantikan tenaga kerja manusia secara keseluruhan yang digantikan oleh teknologi dan robotik.</p>
-                        </div>
-                        <div class="info">
-                            <img src="assets/smartgreenhouse.png" alt="Gambar Industri 4.0">
-                            <div class="link">
-                                <a href="#" target="_blank"><p>Smart Greenhouse adalah salah satu teknologi yang menggunakan otomatisasi IoT untuk menyiram tanaman secara jadwal, atau mengambil data kelembapan tanah dari tanaman.</a>
-                            </div>
-                        </div>
-                    </section>
-                    <!--
-                    <span class="separator">
-                        
-                        <img src="assets/kira.gif" alt="Separator">
-                        <img src="assets/kira.gif" alt="Separator">
-                        <img src="assets/kira.gif" alt="Separator">
-                        
-                    </span>
-                    -->
-                    <section id="p4konten2">
-                        <div class="text">
-                            <h2>Latar Belakang</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </section>
-                    <section id="p4konten3">
-                        <div class="text">
-                            <h2>Dampak</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </section>
-                    <section id="p4konten4">
-                        <div class="text">
-                            <h2>Penemuan</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </section>
-                    <section id="p4konten5">
-                        <div class="text">
-                            <h2>Trivia</h2>
-                            <h3>
-                                <span class="sign">+</span> Kenapa ....?
-                            </h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                         <hr>
-                        </div>
-                    </section>
-                    <section id="p4konten6">
-                        <div class="text">
-                            <h2>Sumber</h2>
-                            <ul>
-                                <li><a href="https://www.britannica.com/event/Industrial-Revolution" target="_blank">Britannica - Industrial Revolution</a></li>
-                                <li><a href="https://www.history.com/topics/industrial-revolution" target="_blank">History - Industrial Revolution</a></li>
-                                
+            <div class="container-fluid px-4 my-4">
+                <div class="row g-4">
+                    <div class="col-auto d-none d-md-block">
+                        <div class="sidebar">
+                            <ul class="list-unstyled">
+                                <li><a href="#p4konten1">Revolusi Industri 4.0</a></li>
+                                <li><a href="#p4konten2">Latar Belakang</a></li>
+                                <li><a href="#p4konten3">Dampak</a></li>
+                                <li><a href="#p4konten4">Penemuan</a></li>
+                                <li><a href="#p4konten5">Trivia</a></li>
+                                <li><a href="#p4konten6">Sumber</a></li>
                             </ul>
                         </div>
-                    </section>
+                    </div>
+                    <div class="col">
+                        <div class="content">
+                            <section id="p4konten1" class="row g-4 align-items-start">
+                                <div class="col-md text-col">
+                                    <div class="text">
+                                        <h2>Revolusi Industri 4.0</h2>
+                                        <p>Revolusi Industri Keempat adalah keadaan industri abad ke-21 ketika perubahan besar-besaran di berbagai bidang lewat perpaduan teknologi yang mengurangi sekat-sekat antara dunia fisik, digital, dan biologi. Revolusi ini ditandai dengan kemajuan teknologi dalam berbagai bidang, khususnya kecerdasan buatan, robot, blockchain, teknologi nano, komputer kuantum, bioteknologi, Internet of Things (IoT), percetakan 3D, dan kendaraan tanpa awak.</p>
+                                        <p>Seperti revolusi terdahulu, revolusi industri keempat berpotensi meningkatkan kualitas hidup masyarakat di seluruh dunia. Namun, kemajuan di bidang otomatisasi dan kecerdasan buatan telah menimbulkan kekhawatiran bahwa mesin-mesin suatu hari akan mengambil alih pekerjaan manusia. Selain itu, revolusi-revolusi sebelumnya masih dapat menghasilkan lapangan kerja baru untuk menggantikan pekerjaan yang diambil alih oleh mesin, sementara kali ini kemajuan kecerdasan buatan dan otomatisasi dapat menggantikan tenaga kerja manusia secara keseluruhan yang digantikan oleh teknologi dan robotik.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-auto">
+                                    <div class="info text-center">
+                                        <a href="#" title="Smart Greenhouse" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="left" data-bs-content="Smart Greenhouse adalah salah satu teknologi yang menggunakan otomatisasi IoT untuk menyiram tanaman secara jadwal, atau mengambil data kelembapan tanah dari tanaman.">
+                                        <img src="assets/smartgreenhouse.png" alt="Gambar Industri 4.0" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="p4konten2">
+                                <div class="text">
+                                    <h2>Latar Belakang</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </section>
+                            <section id="p4konten3">
+                                <div class="text">
+                                    <h2>Dampak</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </section>
+                            <section id="p4konten4">
+                                <div class="text">
+                                    <h2>Penemuan</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </section>
+                            <section id="p4konten5">
+                                <div class="text">
+                                    <h2>Trivia</h2>
+                                    <h3><span class="sign">+</span> Kenapa ....?</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    <hr>
+                                </div>
+                            </section>
+                            <section id="p4konten6">
+                                <div class="text">
+                                    <h2>Sumber</h2>
+                                    <ul>
+                                        <li><a href="https://www.britannica.com/event/Industrial-Revolution" target="_blank">Britannica - Industrial Revolution</a></li>
+                                        <li><a href="https://www.history.com/topics/industrial-revolution" target="_blank">History - Industrial Revolution</a></li>
+                                        <li><a href="https://www.khanacademy.org/humanities/world-history/1750-1900/industrial-revolution/a/the-industrial-revolution" target="_blank">Khan Academy - The Industrial Revolution</a></li>
+                                        <li><a href="https://www.bbc.co.uk/history/british/victorians/launch_victorian_01.shtml" target="_blank">BBC - The Victorian Era</a></li>
+                                        <li><a href="https://www.nationalgeographic.com/history/article/industrial-revolution" target="_blank">National Geographic - Industrial Revolution</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="footer">
-            <p>Copyright &copy; 2026</p>
+        <div id="mobileMenuOverlay" class="mobile-overlay"></div>
+        <div id="mobileSidebar" class="mobile-sidebar">
+            <div class="mobile-sidebar-header">
+                <button id="closeMobileSidebar">&times;</button>
+            </div>
+            <div id="mobileSidebarContent"></div>
         </div>
 
-    <audio id="sound">
-         <source src="assets/U.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="sound2">
-        <source src="assets/K.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="sound3">
-         <source src="assets/W.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="sound4">
-         <source src="assets/C.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="sound5">
-         <source src="assets/M.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="sound6">
-         <source src="assets/F.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="sound7">
-         <source src="assets/Y.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="sound8">
-         <source src="assets/A.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="sound9">
-         <source src="assets/D.mp3" type="audio/mpeg">
-    </audio>
-
+        <footer class="footer text-center py-4 mt-4">
+            <p class="mb-0">Copyright &copy; 2026</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="script.js"></script>
     </body>
-    
 </html>
