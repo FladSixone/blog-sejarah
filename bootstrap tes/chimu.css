@@ -164,6 +164,14 @@ body {
   cursor: pointer;
   font-size: 14px;
   font-weight: bold;
+
+  transition: all 0.35s ease-in;
+}
+
+.button button:hover {
+  border-color: rgb(128, 0, 0);
+  background-color: red;
+  color: black;
 }
 
 .footer img {
